@@ -1,0 +1,165 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>url navigation</title>
+<style type="text/css">
+body{font:14px arial,\5b8b\4f53,sans-serif;} 
+*{border:0;}
+ul,li{list-style:none;}
+.main{width:200px;margin:0 auto;}
+.navigation{width:200px;padding-left:0;padding-right:0;}
+.navigation li{width:180px;line-height:32px;text-align:left;padding-left:15px;padding-right:10px;font-family:Microsoft YaHei;border-bottom:1px solid #c8c6c6;}
+.navigation li img{width:18px;height:12px;margin-top:6px;float:right;}
+button{width:100px;height:30px;-webkit-appearance:none;background-color:#ef3572;border-radius:8px;color:#fff;font-size:14px;font-weight:bold;font-family:Microsoft YaHei;margin-left:40px;}	
+.sub_navigation{width:180px;padding-left:0;padding-right:0;display:none;}
+.sub_navigation li{width:180px;height:34px;line-height:28px;text-align:left;font-family:Microsoft YaHei;border-bottom:1px solid #c8c6c6;}
+.sub_navigation .li_last{border-bottom:0;}
+a{text-decoration:none;}
+a:hover{color:red;}
+#li7 a{color:#000;}
+#li7 span{font-size:10px;margin-left:10px;color:#fff;background-color:#b90014;padding:2px 4px;font-weight:bold;border-radius:4px;}
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/action.js"></script>
+</head>
+<body>
+<div class="main">
+	<ul class="navigation">
+		<li id="li2">
+			主要频道<img src="images/icon.png" />
+			<ul class="sub_navigation" id="main_channel">
+				<li><a href="#">育儿论坛</a></li>
+				<li><a href="#">育儿回答</a></li>
+				<li><a href="#">育儿博客</a></li>
+				<li><a href="#">宝宝主页</a></li>
+				<li class="li_last"><a href="#">育儿圈圈</a></li>		
+			</ul>	
+		</li>
+		<li id="li3">
+			工具性后台<img src="images/icon.png" />
+			<ul class="sub_navigation" id="tool">
+				<li><a href="#">应用监控</a></li>
+				<li><a href="#">项目资源管理</a></li>
+				<li><a href="#">网站安全</a></li>
+				<li><a href="#">精工</a></li>
+				<li><a href="#">memcached - 泰山新村</a></li>		
+				<li><a href="#">memcached - 游府西街</a></li>		
+				<li><a href="#">育网爬虫</a></li>		
+				<li><a href="#">宝宝来了app</a></li>		
+				<li><a href="#">育儿网app</a></li>		
+				<li><a href="#">Redis服务</a></li>		
+				<li><a href="#">nginx日志分析</a></li>		
+				<li><a href="#">密码安全检测</a></li>		
+				<li><a href="#">爬虫统计</a></li>		
+				<li><a href="#">妈妈购特卖</a></li>		
+				<li><a href="#">百度问答</a></li>		
+				<li><a href="#">绿卡发放（试用后台）</a></li>		
+				<li><a href="#">好奇答人统计</a></li>		
+				<li><a href="#">后台权限管理</a></li>		
+				<li><a href="#">调查平台</a></li>		
+				<li><a href="#">词汇审核检测</a></li>		
+				<li><a href="#">其他网站登录</a></li>		
+				<li><a href="#">许愿树捆绑</a></li>		
+				<li><a href="#">Bug管理后台</a></li>		
+				<li><a href="#">综合统计</a></li>		
+				<li><a href="#">友情链接管理</a></li>		
+				<li><a href="#">项目管理后台</a></li>		
+				<li><a href="#">积分管理</a></li>		
+				<li><a href="#">邮寄查询</a></li>		
+				<li><a href="#">图片管理</a></li>		
+				<li><a href="#">(新)词汇审核库</a></li>		
+				<li><a href="#">消息提醒-服务</a></li>		
+				<li><a href="#">群发站内短信</a></li>		
+				<li><a href="#">富媒体广告系统</a></li>		
+				<li><a href="#">广告系统</a></li>		
+				<li><a href="#">短链系统</a></li>		
+				<li><a href="#">短信发送后台</a></li>		
+				<li class="li_last"><a href="#">活动礼品-用户名id转换</a></li>		
+			</ul>
+		</li>
+		<li id="li4">
+			小频道审核后台<img src="images/icon.png"  />
+			<ul class="sub_navigation" id="channel_examine">
+				<li><a href="#">指数/辟谣/人物对话专题</a></li>		
+				<li><a href="#">用户中心-统一管理后台</a></li>		
+				<li><a href="#">新许愿树后台</a></li>		
+				<li><a href="#">老版许愿树后台</a></li>		
+				<li><a href="#">宝贝计划手机端</a></li>		
+				<li><a href="#">育儿博客计划</a></li>		
+				<li><a href="#">教师博客</a></li>		
+				<li><a href="#">教师社区</a></li>		
+				<li><a href="#">儿童博客</a></li>		
+				<li><a href="#">儿童城</a></li>		
+				<li><a href="#">汉博网</a></li>		
+				<li><a href="#">开心俱乐部</a></li>		
+				<li><a href="#">快乐土豆</a></li>		
+				<li class="li_last"><a href="#">育儿微博</a></li>		
+			</ul>
+		</li>
+		<li id="li5">
+			内容更新后台<img src="images/icon.png" />
+			<ul class="sub_navigation" id="content_update">
+				<li><a href="#">IPTV</a></li>		
+				<li><a href="#">hao123母婴</a></li>		
+				<li><a href="#">友链后台</a></li>		
+				<li><a href="#">CRM</a></li>		
+				<li><a href="#">news频道添加作者</a></li>		
+				<li><a href="#">问答内容后台</a></li>		
+				<li><a href="#">cms发布审核后台</a></li>		
+				<li><a href="#">育儿百科</a></li>		
+				<li><a href="#">360项目</a></li>		
+				<li><a href="#">手机问题同步后台</a></li>		
+				<li><a href="#">专家专区</a></li>		
+				<li><a href="#">市场项目-迪巧问答</a></li>		
+				<li><a href="#">专家问题导入后台</a></li>		
+				<li><a href="#">育网广播</a></li>		
+				<li><a href="#">首页更新-cms文章添加</a></li>		
+				<li><a href="#">孕育周刊</a></li>		
+				<li><a href="#">帮助中心</a></li>		
+				<li><a href="#">内容后台-sphinxbaby</a></li>		
+				<li><a href="#">育儿视点</a></li>		
+				<li><a href="#">孕妇频道</a></li>		
+				<li><a href="#">专家访谈</a></li>		
+				<li><a href="#">杂志后台</a></li>		
+				<li><a href="#">亲子资源</a></li>		
+				<li><a href="#">评测中心</a></li>		
+				<li class="li_last"><a href="#">母婴产品</a></li>			
+			</ul>
+		</li>
+		<li id="li6">
+			其他网站<img src="images/icon.png" />
+			<ul class="sub_navigation" id="others">
+				<li><a href="#">摇篮</a></li>		
+				<li><a href="#">丫丫</a></li>		
+				<li><a href="#">宝宝树</a></li>		
+				<li><a href="#">新浪亲子</a></li>		
+				<li><a href="#">腾讯育儿</a></li>		
+				<li><a href="#">搜狐母婴</a></li>		
+				<li><a href="#">太平洋亲子</a></li>		
+				<li><a href="#">百家胎教</a></li>		
+				<li><a href="#">爱孕</a></li>		
+				<li><a href="#">瑞丽</a></li>		
+				<li><a href="#">太平洋女人</a></li>		
+				<li><a href="#">新浪女性</a></li>		
+				<li><a href="#">搜狐女人</a></li>		
+				<li><a href="#">网易女人</a></li>		
+				<li><a href="#">爱美网</a></li>		
+				<li><a href="#">onlylady</a></li>		
+				<li><a href="#">51yes</a></li>		
+				<li><a href="#">站长工具</a></li>		
+				<li><a href="#">问题反馈</a></li>		
+				<li><a href="#">Google邮箱</a></li>		
+				<li><a href="#">Google文档</a></li>		
+				<li><a href="#">Google阅读</a></li>		
+				<li><a href="#">Google趋势</a></li>		
+				<li><a href="#">百度指数</a></li>		
+				<li class="li_last"><a href="#">天气查询</a></li>			
+			</ul>
+		</li>
+		<li id="li7"><a href="#" id="li7_a">与我有关的问题</a></li>
+	</ul>
+	<button class="submit_error" id="submit_error">反馈问题</button>
+</div>
+</body>
+</html>
